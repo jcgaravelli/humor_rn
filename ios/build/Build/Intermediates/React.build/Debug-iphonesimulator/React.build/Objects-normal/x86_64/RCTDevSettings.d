@@ -1,0 +1,23 @@
+dependencies: \
+  /Users/julio.garavelli/Projects/humor_rn/node_modules/react-native/React/Modules/RCTDevSettings.mm \
+  /Users/julio.garavelli/Projects/humor_rn/node_modules/react-native/React/Modules/RCTDevSettings.h \
+  /Users/julio.garavelli/Projects/humor_rn/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/julio.garavelli/Projects/humor_rn/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/julio.garavelli/Projects/humor_rn/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/julio.garavelli/Projects/humor_rn/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/julio.garavelli/Projects/humor_rn/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/julio.garavelli/Projects/humor_rn/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/julio.garavelli/Projects/humor_rn/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/julio.garavelli/Projects/humor_rn/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/julio.garavelli/Projects/humor_rn/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /Users/julio.garavelli/Projects/humor_rn/node_modules/react-native/React/Modules/JSCSamplingProfiler.h \
+  /Users/julio.garavelli/Projects/humor_rn/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/julio.garavelli/Projects/humor_rn/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/julio.garavelli/Projects/humor_rn/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/julio.garavelli/Projects/humor_rn/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/julio.garavelli/Projects/humor_rn/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/julio.garavelli/Projects/humor_rn/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/julio.garavelli/Projects/humor_rn/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
+  /Users/julio.garavelli/Projects/humor_rn/node_modules/react-native/React/DevSupport/RCTPackagerClientResponder.h \
+  /Users/julio.garavelli/Projects/humor_rn/node_modules/react-native/React/DevSupport/RCTReloadPackagerMethod.h \
+  /Users/julio.garavelli/Projects/humor_rn/node_modules/react-native/React/DevSupport/RCTSamplingProfilerPackagerMethod.h
