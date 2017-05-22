@@ -9,12 +9,22 @@ import {
   AppRegistry,
   Image,
   StyleSheet,
-  ScrollView,
+  ListView,
   Text,
   View
 } from 'react-native';
 
 export default class humor_rn extends Component {
+
+    //Create list
+    constructor() {
+    super();
+    const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+    this.state = {
+      dataSource: ds.cloneWithRows(['row 1', 'row 2', 'row 3', 'row 4', 'row 5', 'row 6', 'row 7']),
+    };
+  }
+
   render() {
     return (
       <View style={{flex: 1,
@@ -22,24 +32,28 @@ export default class humor_rn extends Component {
                     alignItems: 'center',
                     paddingTop: 80, }}> 
 
-        <View style={{width: 350, height: 150, backgroundColor: '#29384F'}} />
-        <View style={{width: 350, height: 75, backgroundColor: '#1A2539'}} />
-        <View style={{width: 350, height: 300, backgroundColor: '#121B27'}} />
+        <View style={{width: 350, height: 150, backgroundColor: '#29384F'}}>
+
+        </View>
+        
+         <View style={{width: 350, height: 75, backgroundColor: '#1A2539'}}>
+
+            <Text style={styles.welcome}>
+              Leitura
+            </Text>
+
+         </View>
+
+         <View style={{width: 350, height: 300, backgroundColor: '#121B27'}}>
+            
+           <ListView style={styles}
+            dataSource={this.state.dataSource}
+            renderRow={(rowData) => <Text>{rowData.welcome}</Text>}
+           />
+          
+         </View>
           
       </View>
-
-      // <View style={styles.container}>
-      //   <Text style={styles.welcome}>
-      //     Welcome to React Native!
-      //   </Text>
-      //   <Text style={styles.instructions}>
-      //     To get started, edit index.ios.js
-      //   </Text>
-      //   <Text style={styles.instructions}>
-      //     Press Cmd+R to reload,{'\n'}
-      //     Cmd+D or shake for dev menu
-      //   </Text>
-      // </View>
     );
   }
 }
@@ -52,9 +66,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5FCFF',
   },
   welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+    fontSize: 14,
+    textAlign: 'left',
+    margin: 20,
+    color: '#FFFFFF',
   },
   instructions: {
     textAlign: 'center',
