@@ -31,7 +31,6 @@ const styles = StyleSheet.create({
     marginLeft: 12,
     fontSize: 16,
     color: '#FFFFFF',
-    paddingTop: 20,
   },
   photo: {
     height: 40,

@@ -32,25 +32,25 @@ export default class Consumo extends Component {
       <View style={{flex: 1,
                     //justifyContent: 'center',
                     alignItems: 'center',
-                    paddingTop: 80, }}> 
+                    paddingTop: 70, }}> 
 
         <StatusBar backgroundColor="blue" barStyle="light-content"/>
-        <View style={{width: 375, height: 175, backgroundColor: '#29384F'}}> 
+        <View style={styles.players}> 
         </View>
         
-          <View style={{width: 375, height: 100, backgroundColor: '#1A2539'}}>
+          <View style={styles.view}>
            <Text style={styles.text}>
              Leitura
            </Text>
           </View>
 
-          <View style={{width: 375, height: 310, backgroundColor: '#121B27'}}>
-            
+          <View style={styles.listView}>
            <ListView 
              dataSource={this.state.dataSource}
              renderRow={(rowData) => <VideoCell texto={rowData}/>}
             />
           </View> 
+
       </View>
     );
   }
@@ -66,6 +66,22 @@ const styles = StyleSheet.create({
     marginLeft: 12,
     fontSize: 16,
     color: '#FFFFFF',
-    paddingTop: 20,
+    paddingTop: 30,
   },
+  players: {
+    width: 375, 
+    height: 175, 
+    backgroundColor: '#29384F',
+  },
+  view: {
+    width: 375, 
+    height: 100, 
+    backgroundColor: '#1A2539',
+  },
+  listView: {
+    width: 375, 
+    height: 325, 
+    backgroundColor: '#121B27',
+  },
+
 });
